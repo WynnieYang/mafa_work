@@ -1,0 +1,30 @@
+.text {
+    &.bold {
+        font-weight: 700;
+    }
+    .fw-500 {
+        font-weight: 500;
+    }
+    &.fs_12 {
+        font-size: 12px;
+    }
+    &.fs_16 {
+        font-size: 16px;
+    }
+    &.fs_20 {
+        font-size: 16px;
+        letter-spacing: 0.08vw;
+    }
+    &.fs_30 {
+        font-size: 30px;
+    }
+    &.black {
+        color: $Black;
+    }
+    &.gray-dark {
+        color: $Gray_Dark;
+    }
+    &.gray-darkest {
+        color: $Gray_Darkest;
+    }
+}
