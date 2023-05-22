@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mafa_work/static/css/main.99de96f3.css",
+    "main.js": "/mafa_work/static/js/main.ab997645.js",
+    "index.html": "/mafa_work/index.html",
+    "main.99de96f3.css.map": "/mafa_work/static/css/main.99de96f3.css.map",
+    "main.ab997645.js.map": "/mafa_work/static/js/main.ab997645.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99de96f3.css",
+    "static/js/main.ab997645.js"
+  ]
+}
