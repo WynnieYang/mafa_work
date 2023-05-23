@@ -20,17 +20,17 @@
         position: fixed;
         padding: 1px;
         background-color: $white;
-        border-radius: 8px;
+        // border-radius: 8px;
         z-index: $seventhLayerIndex;
         overflow: hidden;
         
-            border: 2px solid;
-            border-color:$Red_Lightest;
+            // border: 2px solid;
+            // border-color:$Red_Lightest;
         // @include transparent-border;
         .float-window-loading-wrapper, .float-window-options-content {
             padding: 8px 0;
             max-height: 230px;
-            overflow-y: auto;
+            overflow-y: hidden;
         }
         .float-window-options-open {
             box-shadow: $Gradient_Blue_Base_To_Purple_Base;
