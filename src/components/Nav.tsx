@@ -110,7 +110,7 @@ const Nav: React.FC<any> = () => {
         <div className='nav-block w-100 display_center_center'><span className='text fs_30 bold black '>MAFA YANG</span></div>
         <div className='w-100 display_center_center flex flex-row'>
             <Link to="/Home" className='nav-item display_center_center cursor_flag cursor_pointer' ><span className='text fs_20 black '>HOME</span></Link>
-            <Link to="/Portrait" className='nav-item display_center_center cursor_flag cursor_pointer' onMouseEnter={(e)=>{mouseEnter('portrait',e)}} onMouseLeave={pageMouseLeave}><span className='text fs_20 black '>PORTRAIT</span></Link>
+            <div className='nav-item display_center_center cursor_flag cursor_pointer' onMouseEnter={(e)=>{mouseEnter('portrait',e)}} onMouseLeave={pageMouseLeave}><span className='text fs_20 black '>PORTRAIT</span></div>
             <div className='nav-item display_center_center cursor_flag cursor_pointer' onMouseEnter={(e)=>{mouseEnter('product',e)}} onMouseLeave={pageMouseLeave} ><span className='text fs_20 black '>PRODUCT</span></div>
             <div className='nav-item display_center_center cursor_flag cursor_pointer' onMouseEnter={(e)=>{mouseEnter('event',e)}} onMouseLeave={pageMouseLeave} ><span className='text fs_20 black '>EVENT</span></div>
             <div className='nav-item display_center_center cursor_flag cursor_pointer'><span className='text fs_20 black '>CONTACT ME</span></div>
