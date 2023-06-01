@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Grid from '@mui/material/Grid';
 import '../../styles/base.scss';
 import Nav from '../../components/Nav';
+import firebase from '../../firebase/firebase';
 
 const Home: React.FC<any> = () => {
     const [imgShow,setImageShow] = useState(false);
@@ -16,6 +17,10 @@ const Home: React.FC<any> = () => {
           }, 1500);
     },[])
     const [isHover,setIsHover] = useState({show: false, width: 0, top: 0, left: 0, right:0},)
+    
+    const saveImg = () => {
+        
+    }
     return(
         <Grid container spacing={0} className='portal-layout'>
             <Grid item xs={12} md={12}>
