@@ -31,7 +31,9 @@ const Home: React.FC<any> = () => {
                         <div className='h-100'><img className={`w-100 ${imgShow ? 'img-opacity' : 'opacity-0'}`} src={require("./images/IMG_0515.jpg")}></img></div>
                     </div> */}
                     <div className='content w-100 flex flex-row display_start_center' style={{flexGrow:'1'}}>
-                        <div className='triangle'></div>
+                        <div className='triangle'>
+                            {/* <img src={require("./images/IMG_0515.jpg")}></img> */}
+                        </div>
                         {/* <div className={`triangle`} style={{position:'absolute',left:'41%',top:'38%'}}></div>
                         <div className='h-100'><img className={`w-100 img-opacity`} src={require("./images/IMG_0515.jpg")}></img></div> */}
                         {/* <div className='triangle-image'><img className={`w-100 img-opacity`} src={require("./images/IMG_0515.jpg")}></img></div> */}

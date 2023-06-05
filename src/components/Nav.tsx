@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useContext  } from 'react';
 // import Grid from '@mui/material/Grid';
 import '../styles/base.scss'
 import { Link } from 'react-router-dom';
+import { HiBars3 } from "react-icons/hi2";
 
 interface winType {
     [key:string]:floatWin;
@@ -16,7 +17,7 @@ interface floatWin {
 }
 
 const Nav: React.FC<any> = () => {
-
+    const windowHeight = window.innerHeight;
     // const [winOpen,setWinOpen] = useState<winType>({Home:{show: false, width: 0, top: 0, left: 0, right:0},Portrait:{show: false, width: 0, top: 0, left: 0, right:0}})
     const [homeWin,setHomeWin] = useState<floatWin>({show: false, width: 0, top: 0, left: 0, right:0});
     const [portraitWin,setPortraitWin] = useState<floatWin>({show: false, width: 0, top: 0, left: 0, right:0});
@@ -24,6 +25,7 @@ const Nav: React.FC<any> = () => {
     const [eventWin,setEventWin] = useState<floatWin>({show: false, width: 0, top: 0, left: 0, right:0});
     const [leave,setLeave] = useState(false);
     const [hover,setHover] = useState(false);
+    const [show,setShow] = useState(false);
 
 
     function share_setFloatWindowOptions(ele:any, pos?:string) { 
@@ -108,6 +110,60 @@ const Nav: React.FC<any> = () => {
     return(
         <>
         <div className='nav-block w-100 display_center_center'><span className='text fs_30 bold black '>MAFA YANG</span></div>
+        {!show && <div className='sidebar display_center_center' onClick={()=>setShow(true)}><HiBars3 className='sidebar-icon' size={50}/></div>}
+        {show && <div className='sidebar-block' >
+            <div className='sidebar-item'>
+                <Link to={'/Home'}><span className='sidebar-text fs_20'>Home</span></Link>
+            </div>
+            <div className='sidebar-item'>
+                <span className='sidebar-text fs_20'>Portrait</span>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Beauty'}><span className='sidebar-text fs_16'>Beauty</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Music'}><span className='sidebar-text fs_16'>Music Image</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Creative'}><span className='sidebar-text fs_16'>Creative</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Hair'}><span className='sidebar-text fs_16'>Hair Style</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Family'}><span className='sidebar-text fs_16'>Family</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Kol'}><span className='sidebar-text fs_16'>KOL</span></Link>
+            </div>
+            <div className='sidebar-item'>
+                <span className='sidebar-text fs_20'>Products</span>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Product'}><span className='sidebar-text fs_16'>Product</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Food'}><span className='sidebar-text fs_16'>Food</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Accessories'}><span className='sidebar-text fs_16'>Accessories</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Cosmetics'}><span className='sidebar-text fs_16'>Cosmetics</span></Link>
+            </div>
+            <div className='sidebar-item'>
+                <span className='sidebar-text fs_20'>Event</span>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Wedding'}><span className='sidebar-text fs_16'>Wedding</span></Link>
+            </div>
+            <div className='sidebar-item child'>
+                <div className='level-block'></div><Link to={'/Activity'}><span className='sidebar-text fs_16'>Activity Album</span></Link>
+            </div>
+            <div className='sidebar-item'>
+                <span className='sidebar-text fs_20'>Contact me</span>
+            </div>
+        </div>}
         <div className='w-100 display_center_center flex flex-row'>
             <Link to="/Home" className='nav-item display_center_center cursor_flag cursor_pointer' ><span className='text fs_20 black '>HOME</span></Link>
             <div className='nav-item display_center_center cursor_flag cursor_pointer' onMouseEnter={(e)=>{mouseEnter('portrait',e)}} onMouseLeave={pageMouseLeave}><span className='text fs_20 black '>PORTRAIT</span></div>
