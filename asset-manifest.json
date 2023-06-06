@@ -1,14 +1,38 @@
 {
   "files": {
-    "main.css": "/mafa_work/static/css/main.a9b4b525.css",
-    "main.js": "/mafa_work/static/js/main.4ed555aa.js",
-    "static/media/IMG_0515.jpg": "/mafa_work/static/media/IMG_0515.1f26c90b05ff43d08a8b.jpg",
+    "main.css": "/mafa_work/static/css/main.c572587f.css",
+    "main.js": "/mafa_work/static/js/main.214d0244.js",
+    "static/media/IMG_3638.jpg": "/mafa_work/static/media/IMG_3638.0d25533af779039b8ff1.jpg",
+    "static/media/IMG_4484.jpg": "/mafa_work/static/media/IMG_4484.4bf7d4310517a02a9de3.jpg",
+    "static/media/IMG_4492.jpg": "/mafa_work/static/media/IMG_4492.63c9a6637ccb95abd748.jpg",
+    "static/media/IMG_1525.jpg": "/mafa_work/static/media/IMG_1525.b3d964daac520f8cd372.jpg",
+    "static/media/IMG_1418.jpg": "/mafa_work/static/media/IMG_1418.2e0b659b43aaee7fb140.jpg",
+    "static/media/IMG_1876.jpg": "/mafa_work/static/media/IMG_1876.348d4dec4547397bc49a.jpg",
+    "static/media/IMG_1307.jpg": "/mafa_work/static/media/IMG_1307.8a20caac0c21062cb1de.jpg",
+    "static/media/IMG_1941.jpg": "/mafa_work/static/media/IMG_1941.eec1eefe4c3f58299965.jpg",
+    "static/media/IMG_1908.jpg": "/mafa_work/static/media/IMG_1908.d0a41f366e4dbdc38f70.jpg",
+    "static/media/IMG_1838.jpg": "/mafa_work/static/media/IMG_1838.2bf20970fe24edef1e30.jpg",
+    "static/media/IMG_1455.jpg": "/mafa_work/static/media/IMG_1455.e0d7b4816a731a58732d.jpg",
+    "static/media/IMG_1589.jpg": "/mafa_work/static/media/IMG_1589.91aa444ea6748906ca08.jpg",
+    "static/media/IMG_4423.jpg": "/mafa_work/static/media/IMG_4423.91af2c00cfdce9bbbd7f.jpg",
+    "static/media/IMG_0515.jpg": "/mafa_work/static/media/IMG_0515.bb5c675ca2b4cb04f3ea.jpg",
+    "static/media/IMG_0551.jpg": "/mafa_work/static/media/IMG_0551.b399c46b419db0147fd8.jpg",
+    "static/media/nkwo2W9A2297.jpg": "/mafa_work/static/media/nkwo2W9A2297.10000ec31835b65ddb11.jpg",
+    "static/media/nkwoIMG_1944.jpg": "/mafa_work/static/media/nkwoIMG_1944.97bfe32fa15bb3dd17f4.jpg",
+    "static/media/IMG_0603.jpg": "/mafa_work/static/media/IMG_0603.b16e44f7dbbbefc0b966.jpg",
+    "static/media/IMG_4373.jpg": "/mafa_work/static/media/IMG_4373.2d3c454dfc0405de02fe.jpg",
+    "static/media/IMG_0203.jpg": "/mafa_work/static/media/IMG_0203.74005083f836d512c41c.jpg",
+    "static/media/IMG_0212.jpg": "/mafa_work/static/media/IMG_0212.1b082af390ddeae431f2.jpg",
+    "static/media/IMG_0466.jpg": "/mafa_work/static/media/IMG_0466.2ed579cae8411e70dab1.jpg",
+    "static/media/nkwoIMG_2013.jpg": "/mafa_work/static/media/nkwoIMG_2013.b80fa1ca340b526ed7fb.jpg",
+    "static/media/nkwoIMG_2115.jpg": "/mafa_work/static/media/nkwoIMG_2115.dc29eee0f5ab4a75de0b.jpg",
+    "static/media/IMG_5922.jpg": "/mafa_work/static/media/IMG_5922.f7cc0abef5032179cfb7.jpg",
     "index.html": "/mafa_work/index.html",
-    "main.a9b4b525.css.map": "/mafa_work/static/css/main.a9b4b525.css.map",
-    "main.4ed555aa.js.map": "/mafa_work/static/js/main.4ed555aa.js.map"
+    "main.c572587f.css.map": "/mafa_work/static/css/main.c572587f.css.map",
+    "main.214d0244.js.map": "/mafa_work/static/js/main.214d0244.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9b4b525.css",
-    "static/js/main.4ed555aa.js"
+    "static/css/main.c572587f.css",
+    "static/js/main.214d0244.js"
   ]
 }
