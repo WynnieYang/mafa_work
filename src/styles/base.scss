@@ -74,6 +74,7 @@ a {
   }
   .sidebar-block {
     position: absolute;
+    min-width: 180px;
       width: 30%;
       .sidebar-item {
           width: 100%;

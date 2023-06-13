@@ -7,20 +7,31 @@ import firebase from '../../firebase/firebase';
 
 const Home: React.FC<any> = () => {
     const [imgShow,setImageShow] = useState(false);
-    const [trianglevanish,setTriangleVanish] = useState(false);
-    useEffect(()=>{
-        setTimeout(function() {
-            setImageShow(true)
-          }, 1200);
-          setTimeout(function() {
-            setTriangleVanish(true)
-          }, 1500);
-    },[])
+    const [triangleShow,setTriangleShow] = useState(false);
+    // useEffect(()=>{
+    //     setTimeout(function() {
+    //         setImageShow(true)
+    //       }, 1200);
+    //       setTimeout(function() {
+    //         setTriangleVanish(true)
+    //       }, 1500);
+    // },[])
     const [isHover,setIsHover] = useState({show: false, width: 0, top: 0, left: 0, right:0},)
     
     const saveImg = () => {
         
     }
+
+    useEffect(()=>{
+        setTriangleShow(true);
+        setTimeout(function() {
+            setImageShow(true);
+          }, 2000);
+    },[])
+
+    
+
+
     return(
         <Grid container spacing={0} className='portal-layout'>
             <Grid item xs={12} md={12}>
@@ -31,7 +42,8 @@ const Home: React.FC<any> = () => {
                         <div className='h-100'><img className={`w-100 ${imgShow ? 'img-opacity' : 'opacity-0'}`} src={require("./images/IMG_0515.jpg")}></img></div>
                     </div> */}
                     <div className='content w-100 flex flex-row display_start_center' style={{flexGrow:'1'}}>
-                        <div className='triangle'>
+                        {triangleShow && !imgShow ? <div className='triangle'></div> : <div className='whole-img'></div>}
+                        {/* <div className={`${imgShow ? 'whole-img' : 'triangle'}`}> */}
                             {/* <img src={require("./images/IMG_0515.jpg")}></img> */}
                         </div>
                         {/* <div className={`triangle`} style={{position:'absolute',left:'41%',top:'38%'}}></div>
@@ -39,7 +51,7 @@ const Home: React.FC<any> = () => {
                         {/* <div className='triangle-image'><img className={`w-100 img-opacity`} src={require("./images/IMG_0515.jpg")}></img></div> */}
 
                         {/* <div className='window-mask'></div> */}
-                    </div>
+                    {/* </div> */}
                 </div>
                 
             </Grid>

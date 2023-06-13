@@ -105,7 +105,8 @@ const Nav: React.FC<any> = () => {
             setLeave(true);
 
         },200)
-    }    
+    } 
+    const [navOpen,setNavOpen] = useState({portrait:false,products:false,event:false}) 
     
     return(
         <>
@@ -113,55 +114,76 @@ const Nav: React.FC<any> = () => {
         {!show && <div className='sidebar display_center_center' onClick={()=>setShow(true)}><HiBars3 className='sidebar-icon' size={50}/></div>}
         {show && <div className='sidebar-block' >
             <div className='sidebar-item'>
-                <Link to={'/Home'}><span className='sidebar-text fs_20'>Home</span></Link>
+                <Link to={'/Home'}><span className='sidebar-text fs_20'>HOME</span></Link>
             </div>
+            <div className='sidebar-item' onClick={()=>setNavOpen((prevState) => ({
+                ...prevState,
+                portrait:true,
+                products:false,
+                event:false
+            }))}>
+                <span className='sidebar-text fs_20'>PORTRAIT</span>
+            </div>
+            {navOpen.portrait && <div> 
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Beauty'}><span className='sidebar-text fs_16'>Beauty</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Music'}><span className='sidebar-text fs_16'>Music Image</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Creative'}><span className='sidebar-text fs_16'>Creative</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Hair'}><span className='sidebar-text fs_16'>Hair Style</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Family'}><span className='sidebar-text fs_16'>Family</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Kol'}><span className='sidebar-text fs_16'>KOL</span></Link>
+                </div>
+            </div>}
+            <div className='sidebar-item' onClick={()=>setNavOpen((prevState) => ({
+                ...prevState,
+                products:true,
+                portrait:false,
+                event:false
+            }))}>
+                <span className='sidebar-text fs_20'>PRODUCTS</span>
+            </div>
+            {navOpen.products && <div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Product'}><span className='sidebar-text fs_16'>Product</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Food'}><span className='sidebar-text fs_16'>Food</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Accessories'}><span className='sidebar-text fs_16'>Accessories</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Cosmetics'}><span className='sidebar-text fs_16'>Cosmetics</span></Link>
+                </div>
+            </div>}
+            <div className='sidebar-item' onClick={()=>setNavOpen((prevState) => ({
+                ...prevState,
+                products:false,
+                portrait:false,
+                event:true
+            }))}>
+                <span className='sidebar-text fs_20'>EVENT</span>
+            </div>
+            {navOpen.event && <div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Wedding'}><span className='sidebar-text fs_16'>Wedding</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Activity'}><span className='sidebar-text fs_16'>Activity Album</span></Link>
+                </div>
+            </div>}
             <div className='sidebar-item'>
-                <span className='sidebar-text fs_20'>Portrait</span>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Beauty'}><span className='sidebar-text fs_16'>Beauty</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Music'}><span className='sidebar-text fs_16'>Music Image</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Creative'}><span className='sidebar-text fs_16'>Creative</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Hair'}><span className='sidebar-text fs_16'>Hair Style</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Family'}><span className='sidebar-text fs_16'>Family</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Kol'}><span className='sidebar-text fs_16'>KOL</span></Link>
-            </div>
-            <div className='sidebar-item'>
-                <span className='sidebar-text fs_20'>Products</span>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Product'}><span className='sidebar-text fs_16'>Product</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Food'}><span className='sidebar-text fs_16'>Food</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Accessories'}><span className='sidebar-text fs_16'>Accessories</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Cosmetics'}><span className='sidebar-text fs_16'>Cosmetics</span></Link>
-            </div>
-            <div className='sidebar-item'>
-                <span className='sidebar-text fs_20'>Event</span>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Wedding'}><span className='sidebar-text fs_16'>Wedding</span></Link>
-            </div>
-            <div className='sidebar-item child'>
-                <div className='level-block'></div><Link to={'/Activity'}><span className='sidebar-text fs_16'>Activity Album</span></Link>
-            </div>
-            <div className='sidebar-item'>
-                <span className='sidebar-text fs_20'>Contact me</span>
+                <span className='sidebar-text fs_20'>CONTACT ME</span>
             </div>
         </div>}
         <div className='w-100 display_center_center flex flex-row'>
