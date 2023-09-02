@@ -7,6 +7,11 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 import Nav from '../../components/Nav';
 
 const Creative: React.FC<any> = () => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
     return(
         <Grid container spacing={0} className='portal-layout'>
             <Grid item xs={12} md={12}>
@@ -15,7 +20,7 @@ const Creative: React.FC<any> = () => {
                     <div className='content content-block w-100 display_start_center pl-10 pr-10'>
                         <div className='img-block'>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity" src={require("./images/IMG_0466.jpg")}/></div></div>
-                            <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_0515.jpg")}/></div></div>
+                            <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity" src={require("./images/IMG_0515.jpg")}/></div></div>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_0551.jpg")}/></div></div>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_0603.jpg")}/></div></div>
                             {/* <div ><div className='p-10'><img className='w-100' src='https://ucb8df0526c73e943fbc20b79455.previews.dropboxusercontent.com/p/thumb/AB7ZJRzSel8ha4Ufp8v08GQNgphjYMMKlgTuhWlrhi3mkD7fSJ2-5wvTsm2ffDA-Yp9HlFnoXM2UPzIftRtIRvwy2jnkrvD1wqKPQb_k4HTWU5DJpE2pV7mTDs-3l4yCQoN4xrHoPbQZLA4Hej8NLhzDoJuc1MY-TFGyU-sMmI853mBQMWY-zbZLukn7u2naUktXVR81BHsloBCuvqFW0uuR7lkDkPMm7Z8HhW2s8R45DmuZh6HbIXxaFjl6ZIx3pq_vLzgOag84HbSDhpIWocRdle0zhdyuzrb5IJytnDP3JJGS3NWUOWUK-zuPiVT-taPpGIDlqmotw1Ifeba_HvRoNZwCK130SBJzBV-dj-qOJUQWE20VSpdeApmRfaXYBFPBkiUsoEmP92IoEXOKKG_tV_vu6guC7iG-oA-PNfz4qJnFFx3wiarHhMEqDrzjYZwz3ioiZjGdejo8xXz5UWHIAZT1ipX3QtLIFdfv6gOa7D-3Pv0hxY-dXfVraTcgB_Y/p.jpeg'/></div></div> */}
@@ -23,7 +28,7 @@ const Creative: React.FC<any> = () => {
                         </div>
                         <div className='img-block'>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity" src={require("./images/IMG_1307.jpg")}/></div></div>
-                            <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_1418.jpg")}/></div></div>
+                            <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity" src={require("./images/IMG_1418.jpg")}/></div></div>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_1455.jpg")}/></div></div>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_1525.jpg")}/></div></div>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_1589.jpg")}/></div></div>
@@ -31,7 +36,7 @@ const Creative: React.FC<any> = () => {
                         </div>
                         <div className='img-block'>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity" src={require("./images/IMG_0203.jpg")}/></div></div>
-                            <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_0212.jpg")}/></div></div>
+                            <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity" src={require("./images/IMG_0212.jpg")}/></div></div>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_1838.jpg")}/></div></div>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_1876.jpg")}/></div></div>
                             <div ><div className='p-10'><LazyLoadImage width={'100%'} effect="opacity"  src={require("./images/IMG_1908.jpg")}/></div></div>
