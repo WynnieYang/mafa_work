@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mafa_work/static/css/main.cc9576cf.css",
-    "main.js": "/mafa_work/static/js/main.e1e0b45a.js",
+    "main.js": "/mafa_work/static/js/main.cb10efc1.js",
     "static/media/IMG_3638.jpg": "/mafa_work/static/media/IMG_3638.0d25533af779039b8ff1.jpg",
     "static/media/NKWO2083.jpg": "/mafa_work/static/media/NKWO2083.57fae08fb89fa201795b.jpg",
     "static/media/NKWO2152.jpg": "/mafa_work/static/media/NKWO2152.b8e3f5d4a7ed5f54b6bc.jpg",
@@ -66,10 +66,10 @@
     "static/media/IMG_4300-3.jpg": "/mafa_work/static/media/IMG_4300-3.48aebf912375683ad319.jpg",
     "index.html": "/mafa_work/index.html",
     "main.cc9576cf.css.map": "/mafa_work/static/css/main.cc9576cf.css.map",
-    "main.e1e0b45a.js.map": "/mafa_work/static/js/main.e1e0b45a.js.map"
+    "main.cb10efc1.js.map": "/mafa_work/static/js/main.cb10efc1.js.map"
   },
   "entrypoints": [
     "static/css/main.cc9576cf.css",
-    "static/js/main.e1e0b45a.js"
+    "static/js/main.cb10efc1.js"
   ]
 }
