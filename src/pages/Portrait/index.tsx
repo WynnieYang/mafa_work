@@ -8,15 +8,15 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 const Portrait: React.FC<any> = () => {
-    const rowRenderer: ListRowRenderer = ({ index, key, style }: ListRowProps) => {
-        const imageUrl: string | undefined = portraitImages.blockOne[index].url;
+    // const rowRenderer: ListRowRenderer = ({ index, key, style }: ListRowProps) => {
+    //     const imageUrl: string | undefined = portraitImages.blockOne[index].url;
       
-        return (
-          <div key={key} style={style}>
-            {imageUrl && <img src={require(`${imageUrl}`)} alt={`Image ${index}`} />}
-          </div>
-        );
-      };
+    //     return (
+    //       <div key={key} style={style}>
+    //         {imageUrl && <img src={require(`${imageUrl}`)} alt={`Image ${index}`} />}
+    //       </div>
+    //     );
+    //   };
     return(
         <Grid container spacing={0} className='portal-layout'>
             <Grid item xs={12} md={12}>
