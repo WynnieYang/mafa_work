@@ -34,7 +34,7 @@ export function App() {
       <Route path="/Wedding" element={<Wedding />} />
       <Route path="/Activity" element={<Activity />} />
 
-      <Route path="*" element={<Navigate to="/Portrait" />} />
+      <Route path="*" element={<Navigate to="/Accessories" />} />
     </Routes>
     // <div>1.0.1.19</div>
   );
