@@ -4,7 +4,7 @@ import '../../styles/base.scss';
 import Nav from '../../components/Nav';
 import { portraitImages } from './imagesLib';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { List,ListRowRenderer,ListRowProps } from 'react-virtualized';
+// import { List,ListRowRenderer,ListRowProps } from 'react-virtualized';
 
 
 const Portrait: React.FC<any> = () => {
