@@ -2,6 +2,7 @@
 @import './font.scss';
 @import './edge.scss';
 @import './components.scss';
+@import './layout.scss';
 
 *{ 
     font-family: baskerville-urw !important;
@@ -73,7 +74,7 @@ a {
       
   }
   .sidebar-block {
-    position: absolute;
+    position: fixed;
     min-width: 180px;
       width: 30%;
       height: 100%;

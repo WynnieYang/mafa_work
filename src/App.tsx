@@ -21,12 +21,12 @@ export function App() {
     <Routes>
       <Route path="/Home" element={<Home />} />
       <Route path="/Portrait" element={<Portrait />} />
-      <Route path="/Beauty" element={<Beauty />} />
-      <Route path="/Music" element={<Music />} />
+      {/* <Route path="/Beauty" element={<Beauty />} /> */}
+      {/* <Route path="/Music" element={<Music />} /> */}
       <Route path="/Creative" element={<Creative />} />
       <Route path="/Hair" element={<Hair />} />
-      <Route path="/Family" element={<Family />} />
-      <Route path="/Kol" element={<Kol />} />
+      {/* <Route path="/Family" element={<Family />} /> */}
+      {/* <Route path="/Kol" element={<Kol />} /> */}
       <Route path="/Product" element={<Product />} />
       <Route path="/Food" element={<Food />} />
       <Route path="/Accessories" element={<Accessories />} />

@@ -77,7 +77,7 @@ const Nav: React.FC<any> = () => {
     }
 
     useEffect(()=>{
-        console.log('hey')
+        // console.log('hey')
         if(!hover && leave) {
             console.log(
                 'hi'
@@ -112,7 +112,7 @@ const Nav: React.FC<any> = () => {
         <>
         <div className='nav-block w-100 display_center_center'><span className='text fs_30 bold black '>MAFA YANG</span></div>
         {!show && <div className='sidebar display_center_center' onClick={()=>setShow(true)}><HiBars3 className='sidebar-icon' size={50}/></div>}
-        {show && <div className='sidebar-block' >
+        {show && <><div className='sidebar-block zIndex-ten' >
             <div className='sidebar-item'>
                 <Link to={'/Home'}><span className='sidebar-text fs_20'>HOME</span></Link>
             </div>
@@ -125,24 +125,24 @@ const Nav: React.FC<any> = () => {
                 <span className='sidebar-text fs_20'>PORTRAIT</span>
             </div>
             {navOpen.portrait && <div> 
-                <div className='sidebar-item child'>
+                {/* <div className='sidebar-item child'>
                     <div className='level-block'></div><Link to={'/Beauty'}><span className='sidebar-text fs_16'>Beauty</span></Link>
-                </div>
-                <div className='sidebar-item child'>
+                </div> */}
+                {/* <div className='sidebar-item child'>
                     <div className='level-block'></div><Link to={'/Music'}><span className='sidebar-text fs_16'>Music Image</span></Link>
-                </div>
+                </div> */}
                 <div className='sidebar-item child'>
                     <div className='level-block'></div><Link to={'/Creative'}><span className='sidebar-text fs_16'>Creative</span></Link>
                 </div>
                 <div className='sidebar-item child'>
                     <div className='level-block'></div><Link to={'/Hair'}><span className='sidebar-text fs_16'>Hair Style</span></Link>
                 </div>
-                <div className='sidebar-item child'>
+                {/* <div className='sidebar-item child'>
                     <div className='level-block'></div><Link to={'/Family'}><span className='sidebar-text fs_16'>Family</span></Link>
-                </div>
-                <div className='sidebar-item child'>
+                </div> */}
+                {/* <div className='sidebar-item child'>
                     <div className='level-block'></div><Link to={'/Kol'}><span className='sidebar-text fs_16'>KOL</span></Link>
-                </div>
+                </div> */}
             </div>}
             <div className='sidebar-item' onClick={()=>setNavOpen((prevState) => ({
                 ...prevState,
@@ -185,7 +185,9 @@ const Nav: React.FC<any> = () => {
             <div className='sidebar-item'>
                 <span className='sidebar-text fs_20'>CONTACT ME</span>
             </div>
-        </div>}
+        </div>
+        <div className='window-mask white zIndex-six' onClick={()=>{setShow(false)}}></div></>
+        }
         <div className='w-100 display_center_center flex flex-row'>
             <Link to="/Home" className='nav-item display_center_center cursor_flag cursor_pointer' ><span className='text fs_20 black '>HOME</span></Link>
             <div className='nav-item display_center_center cursor_flag cursor_pointer' onMouseEnter={(e)=>{mouseEnter('portrait',e)}} onMouseLeave={pageMouseLeave}><span className='text fs_20 black '>PORTRAIT</span></div>
