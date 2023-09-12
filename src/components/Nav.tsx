@@ -202,24 +202,24 @@ const Nav: React.FC<any> = () => {
                 style={{"minWidth":`${portraitWin.width}px`,"top": `${portraitWin.top}px`, "left": `${portraitWin.left}px`}} >
                 <div className='float-window-options-content'>
 
-                <Link to={'/Beauty'} className={`float-window-block display_center_start`} >
+                {/* <Link to={'/Beauty'} className={`float-window-block display_center_start`} >
                     <div className="float-text display_center_start"><span className="color-black fs_16">Beauty</span></div>
                 </Link>
                 <Link to={'/Music'} className={`float-window-block display_center_start`} >
                     <div className="float-text display_center_start"><span className="color-black fs_16">Music Image</span></div>
-                </Link>
+                </Link> */}
                 <Link to={'/Creative'} className={`float-window-block display_center_start`} >
                     <div className="float-text display_center_start"><span className="color-black fs_16">Creative</span></div>
                 </Link>
                 <Link to={'/Hair'} className={`float-window-block display_center_start`} >
                     <div className="float-text display_center_start"><span className="color-black fs_16">Hair Style</span></div>
                 </Link>
-                <Link to={'/Family'} className={`float-window-block display_center_start`} >
+                {/* <Link to={'/Family'} className={`float-window-block display_center_start`} >
                     <div className="float-text display_center_start"><span className="color-black fs_16">Family</span></div>
                 </Link>
                 <Link to={'/Kol'} className={`float-window-block display_center_start`} >
                     <div className="float-text display_center_start"><span className="color-black fs_16">KOL</span></div>
-                </Link>
+                </Link> */}
                     
                 </div>
             </div>
