@@ -14,7 +14,12 @@ export const accessoryImages = {
         {
             url:'./images/IMG_0069.jpg'
         },
-        
+        {
+            url:'./images/2W9A8475.jpg'
+        },
+         {
+            url:'./images/2W9A8435.jpg'
+        },
         
     ],
     blockTwo: [
@@ -30,7 +35,12 @@ export const accessoryImages = {
         {
             url:'./images/IMG_6360.jpg'
         },
-        
+        {
+            url:'./images/2W9A8458.jpg'
+        },
+        {
+            url:'./images/2W9A8329.jpg'
+        },
     ],
     blockThree: [
         {
@@ -49,6 +59,11 @@ export const accessoryImages = {
         {
             url:'./images/IMG_7933.jpg'
         },
-        
+        {
+            url:'./images/2W9A8355.jpg'
+        },
+         {
+            url:'./images/2W9A8398.jpg'
+        },
     ]
 }
