@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mafa_work/static/css/main.31ca6dae.css",
-    "main.js": "/mafa_work/static/js/main.64e853e5.js",
+    "main.css": "/mafa_work/static/css/main.945cddc2.css",
+    "main.js": "/mafa_work/static/js/main.3fbb0603.js",
     "static/media/IMG_0677.jpg": "/mafa_work/static/media/IMG_0677.f41eb51249de6d067f11.jpg",
     "static/media/IMG_9952.jpg": "/mafa_work/static/media/IMG_9952.6bddefb47d0e1d16ab5e.jpg",
     "static/media/IMG_0125.jpg": "/mafa_work/static/media/IMG_0125.c9a98fb6f2d5b9c62438.jpg",
@@ -162,11 +162,11 @@
     "static/media/IMG_3446.JPG": "/mafa_work/static/media/IMG_3446.088d24848be9c6407355.JPG",
     "static/media/IMG_6764.JPG": "/mafa_work/static/media/IMG_6764.d6341a07bc95ab156103.JPG",
     "index.html": "/mafa_work/index.html",
-    "main.31ca6dae.css.map": "/mafa_work/static/css/main.31ca6dae.css.map",
-    "main.64e853e5.js.map": "/mafa_work/static/js/main.64e853e5.js.map"
+    "main.945cddc2.css.map": "/mafa_work/static/css/main.945cddc2.css.map",
+    "main.3fbb0603.js.map": "/mafa_work/static/js/main.3fbb0603.js.map"
   },
   "entrypoints": [
-    "static/css/main.31ca6dae.css",
-    "static/js/main.64e853e5.js"
+    "static/css/main.945cddc2.css",
+    "static/js/main.3fbb0603.js"
   ]
 }
