@@ -8,6 +8,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 const Portrait: React.FC<any> = () => {
+    const windowWidth = window.innerWidth;
     // const rowRenderer: ListRowRenderer = ({ index, key, style }: ListRowProps) => {
     //     const imageUrl: string | undefined = portraitImages.blockOne[index].url;
       
@@ -34,7 +35,7 @@ const Portrait: React.FC<any> = () => {
                             <div >
                                 {portraitImages.blockOne.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 
@@ -44,7 +45,7 @@ const Portrait: React.FC<any> = () => {
                             <div >
                                 {portraitImages.blockTwo.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 
@@ -54,7 +55,7 @@ const Portrait: React.FC<any> = () => {
                             <div >
                                 {portraitImages.blockThree.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 

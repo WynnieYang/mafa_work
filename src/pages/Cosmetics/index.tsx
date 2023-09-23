@@ -21,7 +21,7 @@ const MyImage:React.FC<any>  = ({ image }) => (
   
 
 const Cosmetics: React.FC<any> = () => {
-
+    const windowWidth = window.innerWidth;
     const LazyPicture = styled(LazyLoadImage)`
   object-fit: cover;
   width: ${({ width }) => (width ? `${width}px` : "100%")};
@@ -54,7 +54,7 @@ const Cosmetics: React.FC<any> = () => {
                             <div >
                                 {cosmeticsImages.blockOne.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 
@@ -64,7 +64,7 @@ const Cosmetics: React.FC<any> = () => {
                             <div >
                                 {cosmeticsImages.blockTwo.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 
@@ -74,7 +74,7 @@ const Cosmetics: React.FC<any> = () => {
                             <div >
                                 {cosmeticsImages.blockThree.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 

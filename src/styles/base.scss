@@ -30,7 +30,6 @@ a {
         background-color: $white;
         .nav-block {
             height: 20vh;
-            padding: 4vh;
         }
         .nav-item {
             width: 14vw;
@@ -71,11 +70,12 @@ a {
       left: 40px;
       width: 40px;
       height: 40px;
+      z-index: 10;
       
   }
   .sidebar-block {
     position: fixed;
-    min-width: 180px;
+    min-width: 200px;
       width: 30%;
       height: 100%;
       background-color: white;

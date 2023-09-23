@@ -9,7 +9,7 @@ import { creativeImages } from './imagesLib';
 
 const Creative: React.FC<any> = () => {
     const [imageLoaded, setImageLoaded] = useState(false);
-
+    const windowWidth = window.innerWidth;
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
@@ -30,7 +30,7 @@ const Creative: React.FC<any> = () => {
                             <div >
                                 {creativeImages.blockOne.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 
@@ -40,7 +40,7 @@ const Creative: React.FC<any> = () => {
                             <div >
                                 {creativeImages.blockTwo.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 
@@ -50,7 +50,7 @@ const Creative: React.FC<any> = () => {
                             <div >
                                 {creativeImages.blockThree.map((img,idx:any) => {
                                     return(
-                                        <div className='p-10' key={idx}><LazyLoadImage width={'100%'} effect="opacity" src={require(`${img.url}`)}/></div>
+                                        <div className='p-10' key={idx}><LazyLoadImage width={windowWidth > 1000 ? `${((windowWidth-20)/3)-20}px` : '100%'} height={windowWidth > 1000 ? img.size === 'vertical' ? `${(((windowWidth-20)/3)-20)*3/2}px` : `${(((windowWidth-20)/3)-20)*2/3}px` : `auto`} effect={windowWidth > 1000 ? 'blur' : 'opacity'} src={require(`${img.url}`)}/></div>
                                     )
                                 })}
                                 

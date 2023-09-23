@@ -16,8 +16,7 @@ interface floatWin {
     right:number;
 }
 
-const Nav: React.FC<any> = () => {
-    const windowHeight = window.innerHeight;
+const Nav: React.FC<any> = ({navRef}) => {
     // const [winOpen,setWinOpen] = useState<winType>({Home:{show: false, width: 0, top: 0, left: 0, right:0},Portrait:{show: false, width: 0, top: 0, left: 0, right:0}})
     const [homeWin,setHomeWin] = useState<floatWin>({show: false, width: 0, top: 0, left: 0, right:0});
     const [portraitWin,setPortraitWin] = useState<floatWin>({show: false, width: 0, top: 0, left: 0, right:0});
@@ -110,7 +109,7 @@ const Nav: React.FC<any> = () => {
     
     return(
         <>
-        <div className='nav-block w-100 display_center_center'><span className='text fs_30 bold black '>MAFA YANG</span></div>
+        <div className='nav-block w-100 display_center_center' ref={navRef}><span className='text fs_30 bold black '>MAFA YANG</span></div>
         {!show && <div className='sidebar display_center_center' onClick={()=>setShow(true)}><HiBars3 className='sidebar-icon' size={50}/></div>}
         {show && <><div className='sidebar-block zIndex-ten' >
             <div className='sidebar-item'>
@@ -136,6 +135,9 @@ const Nav: React.FC<any> = () => {
                 </div>
                 <div className='sidebar-item child'>
                     <div className='level-block'></div><Link to={'/Hair'}><span className='sidebar-text fs_16'>Hair Style</span></Link>
+                </div>
+                <div className='sidebar-item child'>
+                    <div className='level-block'></div><Link to={'/Portrait'}><span className='sidebar-text fs_16'>Professional</span></Link>
                 </div>
                 {/* <div className='sidebar-item child'>
                     <div className='level-block'></div><Link to={'/Family'}><span className='sidebar-text fs_16'>Family</span></Link>
@@ -213,6 +215,9 @@ const Nav: React.FC<any> = () => {
                 </Link>
                 <Link to={'/Hair'} className={`float-window-block display_center_start`} >
                     <div className="float-text display_center_start"><span className="color-black fs_16">Hair Style</span></div>
+                </Link>
+                <Link to={'/Portrait'} className={`float-window-block display_center_start`} >
+                    <div className="float-text display_center_start"><span className="color-black fs_16">Professional</span></div>
                 </Link>
                 {/* <Link to={'/Family'} className={`float-window-block display_center_start`} >
                     <div className="float-text display_center_start"><span className="color-black fs_16">Family</span></div>
